@@ -1,3 +1,4 @@
+import 'package:magicsquare/src/magic_square.dart';
 import 'package:flutter/material.dart';
 
 class WidgetDinamico extends StatefulWidget {
@@ -11,7 +12,7 @@ class _WidgetDinamico extends State<WidgetDinamico> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      children: [MagicSquare()],
     );
   }
 }
