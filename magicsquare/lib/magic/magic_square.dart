@@ -38,10 +38,9 @@ class _MagicSquare extends State<MagicSquare> {
   int diagonal1 = 0;
   int diagonal2 = 0;
 
-  String answer1 = "";
-  String answer2 = "";
+  String answer = "";
 
-  matrix() {
+  matriz() {
     setState(() {
       horizontal1 = data.num1 + data.num2 + data.num3;
       horizontal2 = data.num4 + data.num5 + data.num6;
@@ -55,7 +54,7 @@ class _MagicSquare extends State<MagicSquare> {
   }
 
   validate() {
-    matrix();
+    matriz();
     setState(() {
       if (data.num1 != data.num2 &&
           data.num1 != data.num3 &&
@@ -72,27 +71,26 @@ class _MagicSquare extends State<MagicSquare> {
             vertical2 == 15 &&
             vertical3 == 15 &&
             diagonal1 == 15) {
-          answer1 = "Si   Es";
-          answer2 = "";
+          answer = "Si Es";
         } else {
-          answer1 = "";
-          answer2 = "No es";
+          answer = "No es";
         }
       } else {
-        answer1 = "";
-        answer2 = "No es";
+        answer = "No es";
       }
     });
   }
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: Text(MyApp.name),
-        ),
-        body: buildGridView(),
-      );
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.orange[80],
+      appBar: AppBar(
+        title: Text("Magic Square"),
+      ),
+      body: buildGridView(),
+    );
+  }
 
   Widget buildGridView() => GridView.count(
         crossAxisCount: 3,
@@ -205,25 +203,7 @@ class _MagicSquare extends State<MagicSquare> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  this.answer1,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                      color: Colors.cyan),
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          Container(
-            decoration: BoxDecoration(
-                color: Colors.orangeAccent,
-                borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  this.answer2,
+                  this.answer,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
