@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_this, prefer_const_literals_to_create_immutables, unused_import, use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:magicsquare/buttons/button1.dart';
 import 'package:magicsquare/buttons/button2.dart';
@@ -84,7 +86,7 @@ class _MagicSquare extends State<MagicSquare> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[80],
+      backgroundColor: Colors.orange[90],
       appBar: AppBar(
         title: Text("Magic Square"),
       ),
@@ -217,7 +219,6 @@ class _MagicSquare extends State<MagicSquare> {
             decoration: BoxDecoration(),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [],
             ),
           ),
         ],

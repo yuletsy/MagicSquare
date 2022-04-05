@@ -14,10 +14,10 @@ class Button3 extends StatefulWidget {
 class _Button3 extends State<Button3> {
   netxNumber() {
     setState(() {
-      if (widget.data.num1 == 9) {
-        widget.data.num1 = 1;
+      if (widget.data.num3 == 9) {
+        widget.data.num3 = 1;
       } else {
-        widget.data.num1++;
+        widget.data.num3++;
       }
     });
   }
@@ -31,7 +31,7 @@ class _Button3 extends State<Button3> {
               netxNumber();
             },
             child: Text(
-              this.widget.data.num1.toString(),
+              this.widget.data.num3.toString(),
               style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 30,
