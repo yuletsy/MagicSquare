@@ -221,18 +221,6 @@ class _MagicSquare extends State<MagicSquare> {
               mainAxisAlignment: MainAxisAlignment.center,
             ),
           ),
-          Column(
-            children: [
-              Text("Horizontal1: " + this.horizontal1.toString()),
-              Text("Horizontal2: " + this.horizontal2.toString()),
-              Text("Horizontal3: " + this.horizontal3.toString()),
-              Text("Vertical1: " + this.vertical1.toString()),
-              Text("vertical2: " + this.vertical2.toString()),
-              Text("vertical3: " + this.vertical3.toString()),
-              Text("Diagonal1: " + this.diagonal1.toString()),
-              Text("Diagonal2: " + this.diagonal2.toString()),
-            ],
-          ),
         ],
       );
 }
