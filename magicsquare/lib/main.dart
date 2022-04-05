@@ -1,18 +1,6 @@
-// import 'package:flutter/material.dart';
-// import 'package:magicsquare/structure.dart';
-
-// void main() {
-//   runApp(MaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     home: Scaffold(
-//       appBar: AppBar(title: Text("Magic Square")),
-//       body: MagicSquare(),
-//     ),
-//   ));
-// }
 import 'package:flutter/material.dart';
 import 'package:magicsquare/structure.dart';
-import 'package:magicsquare/src/magic_square.dart';
+import 'package:magicsquare/magic/magic_square.dart';
 
 void main() => runApp(MyApp());
 

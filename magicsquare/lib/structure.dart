@@ -1,4 +1,4 @@
-import 'package:magicsquare/src/magic_square.dart';
+import 'package:magicsquare/magic/magic_square.dart';
 import 'package:flutter/material.dart';
 
 class WidgetDinamico extends StatefulWidget {

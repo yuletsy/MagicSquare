@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:magicsquare/src/magic_square.dart';
+import 'package:magicsquare/magic/magic_square.dart';
 
 class Button3 extends StatefulWidget {
   final Data data;

@@ -73,14 +73,9 @@ class _MagicSquare extends State<MagicSquare> {
             vertical3 == 15 &&
             diagonal1 == 15) {
           answer = "si es";
-          answer1 = "";
         } else {
-          answer = "";
           answer1 = "No es";
         }
-      } else {
-        answer = "";
-        answer1 = "No es";
       }
     });
   }
@@ -182,7 +177,6 @@ class _MagicSquare extends State<MagicSquare> {
               children: [Button9(data: data)],
             ),
           ),
-          Spacer(),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -206,7 +200,7 @@ class _MagicSquare extends State<MagicSquare> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  this.answer1,
+                  this.answer,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
@@ -216,7 +210,6 @@ class _MagicSquare extends State<MagicSquare> {
               ],
             ),
           ),
-          Spacer(),
           Container(
             decoration: BoxDecoration(
                 color: Colors.orangeAccent,
@@ -225,7 +218,7 @@ class _MagicSquare extends State<MagicSquare> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  this.answer,
+                  this.answer1,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
